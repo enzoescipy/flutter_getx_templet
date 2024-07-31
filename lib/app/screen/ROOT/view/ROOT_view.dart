@@ -12,7 +12,7 @@ class RootView extends GetView<RootController> {
     return GetRouterOutlet.builder(
       builder: (context, delegate, currentRoute) {
         return Scaffold(
-          body: GetRouterOutlet(initialRoute: Routes.HOME),
+          body: GetRouterOutlet(initialRoute: Routes.TAB),
         );
       },
     );

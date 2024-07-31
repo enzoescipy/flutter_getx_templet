@@ -44,12 +44,12 @@ class TabsView extends GetView<TabsController> {
                         icon: Icon(Icons.home),
                         label: 'home',
                       ),
-                      // BottomNavigationBarItem(
-                      //     icon: Icon(Icons.list),
-                      //     label: '예시 2'),
-                      // BottomNavigationBarItem(
-                      //     icon: Icon(Icons.face),
-                      //     label: '예시 3'),
+                      BottomNavigationBarItem(
+                          icon: Icon(Icons.list),
+                          label: '예시 2'),
+                      BottomNavigationBarItem(
+                          icon: Icon(Icons.face),
+                          label: '예시 3'),
                     ],
                   ),
                 ),
