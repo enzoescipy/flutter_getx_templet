@@ -1,37 +1,32 @@
 import 'package:get/get.dart';
 
-import 'package:management_application/app/screen/ROOT/view/ROOT_view.dart';
-import 'package:management_application/app/screen/ROOT/binding/ROOT_binding.dart';
-import 'package:management_application/app/screen/Tab/binding/tabs_binding.dart';
-import 'package:management_application/app/screen/Tab/components/Home/binding/home_binding.dart';
-import 'package:management_application/app/screen/Tab/components/Home/view/home_view.dart';
-import 'package:management_application/app/screen/Tab/view/tabs_view.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/ROOT/view/ROOT_view.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/ROOT/binding/ROOT_binding.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/Tab/binding/tabs_binding.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/Tab/components/Home/binding/home_binding.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/Tab/components/Home/view/home_view.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/Tab/view/tabs_view.dart';
 
 class AppPages {
   AppPages._();
 
   static final List<GetPage> routes = [
-    GetPage(name: _Paths.ROOT, 
-    page: () => const RootView(),
-    binding: RootBinding(),
-    participatesInRootNavigator: true,
-    preventDuplicates: true,
-    children: [
-      GetPage(
-        preventDuplicates: true,
-        name: _Paths.TAB,
-        page: () => const TabsView(),
-        binding: TabsBinding(),
-        children: [
-            GetPage(
-              name: _Paths.Home,
-              page: () => const HomeView(),
-              title: 'Home',
-              binding: HomeBinding(),
-            ),
-        ]
-      )
-    ],
+    GetPage(
+      name: _Paths.ROOT,
+      page: () => const RootView(),
+      binding: RootBinding(),
+      participatesInRootNavigator: true,
+      preventDuplicates: true,
+      children: [
+        GetPage(preventDuplicates: true, name: _Paths.TAB, page: () => const TabsView(), binding: TabsBinding(), children: [
+          GetPage(
+            name: _Paths.Home,
+            page: () => const HomeView(),
+            title: 'Home',
+            binding: HomeBinding(),
+          ),
+        ])
+      ],
     )
 
     // GetPage(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:management_application/app/routes/route.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/routes/route.dart';
 
 Future<void> main() async {
   ///파이어베이스 연동

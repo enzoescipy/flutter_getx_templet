@@ -1,16 +1,10 @@
-# flutter_graph_monitor
+# flutter_getx_templet
 
-A new Flutter project.
+Starter lib for A new Flutter GETX project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. make your initial flutter project with android studio.
+2. delete the /lib folder then paste the /lib from this project.
+3. type the command, `flutter pub add get` to your initial flutter project
+4. convert the `import 'package:<YOUR_PROJECT_NAME> ...` to your project name.

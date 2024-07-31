@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import 'package:management_application/app/routes/route.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/routes/route.dart';
 
 class TabsController extends GetxController {
   RxInt selectIndex = RxInt(0);

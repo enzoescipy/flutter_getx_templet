@@ -1,5 +1,5 @@
-import 'package:management_application/app/routes/route.dart';
-import 'package:management_application/app/screen/Root/controller/root_controller.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/routes/route.dart';
+import 'package:<YOUR_PROJECT_NAME>/app/screen/Root/controller/root_controller.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
